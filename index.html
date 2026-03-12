@@ -23,7 +23,7 @@
     <section class="header">
       <!-- Navigation Bar Added -->
 
-      <div class="navbar bg-base-100 shadow-sm">
+      <div class="navbar bg-primary shadow-sm">
         <div class="navbar-start">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -42,11 +42,11 @@
                 />
               </svg>
             </div>
-            <div
+            <ul
               tabindex="-1"
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
-              <h2>Donate Bangladesh</h2>
+              <li class="font-medium"><a href="">Donate Bangladesh</a></li>
               <!-- <li><a>Item 1</a></li>
               <!-- <li>
                 <a>Parent</a>
@@ -56,14 +56,16 @@
                 </ul>
               </li> -->
               <!-- <li><a>Item 3</a></li> -->
-            </div>
+            </ul>
           </div>
-          <a class="btn text-xl bg-[#B4F461]">Blog</a>
+          <a class="btn text-xl bg-btn-primary">Blog</a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <div class="menu menu-horizontal px-5">
             <div><img src="assets/logo.png" alt="" /></div>
-            <div class="py-4 px-1"><h2>Donate Bangladesh</h2></div>
+            <div class="py-4 px-2">
+              <h2 class="text-xl font-semibold">Donate Bangladesh</h2>
+            </div>
           </div>
         </div>
         <div class="navbar-end space-x-8">
@@ -73,8 +75,8 @@
             <div><img src="assets/coin.png" alt="" /></div>
 
             <div class="flex gap-2">
-              <p id="account-balance">5500</p>
-              <span>BDT</span>
+              <p id="account-balance" class="font-medium">5500</p>
+              <span class="font-medium">BDT</span>
             </div>
           </div>
         </div>
