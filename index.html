@@ -5,16 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Donation For People in Bangladesh</title>
 
-    <!-- css files added -->
-    <link rel="stylesheet" href="./css/app.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-
     <!-- Daisy Ui Added-->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
       rel="stylesheet"
       type="text/css"
     />
+
+    <!-- css files added -->
+    <!-- Tailwind CDN v-4 works only html with style type text/tailwindcss -->
+    <style type="text/tailwindcss">
+      @theme {
+        --color-brand-primary: #f9f7f3;
+        --color-brand-btn-primary: #b4f461;
+        --color-main-body: #ffffff;
+      }
+    </style>
+
+    <link rel="stylesheet" href="./css/app.css" />
+    <link rel="stylesheet" href="./css/style.css" />
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
@@ -23,7 +32,7 @@
     <section class="header">
       <!-- Navigation Bar Added -->
 
-      <div class="navbar bg-primary shadow-sm">
+      <div class="navbar bg-brand-primary shadow-sm">
         <div class="navbar-start">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -58,7 +67,20 @@
               <!-- <li><a>Item 3</a></li> -->
             </ul>
           </div>
-          <a class="btn text-xl bg-btn-primary">Blog</a>
+          <button
+            type="button"
+            class="btn text-xl bg-brand-btn-primary"
+            id="toggle-blog"
+          >
+            Blog
+          </button>
+          <button
+            type="button"
+            class="btn text-xl bg-brand-btn-primary hidden"
+            id="toggle-history"
+          >
+            Home
+          </button>
         </div>
         <div class="navbar-center hidden lg:flex">
           <div class="menu menu-horizontal px-5">
@@ -83,7 +105,14 @@
       </div>
     </section>
 
-    <section class="navbar"></section>
+    <section class="main-button bg-main-body shadow-md py-4">
+      <div class="top-btn flex justify-center gap-2">
+        <button class="btn bg-brand-btn-primary" id="donate-btn" type="button">
+          Donate
+        </button>
+        <button class="btn" type="button" id="history-btn">History</button>
+      </div>
+    </section>
     <section class="main"></section>
     <section class="footer"></section>
     <!-- js file added -->
