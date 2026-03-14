@@ -1,34 +1,31 @@
-// Common class for Toggle state
-function toggle(id) {
-  document.getElementById("toggle-home").classList.remove("hidden");
-  document.getElementById("toggle-blog").classList.remove("hidden");
-  document.getElementById(id).classList.add("hidden");
-}
-
 document.getElementById("toggle-blog").addEventListener("click", function () {
   // toggle("toggle-blog");
-  window.location.href = "./index.html";
+  window.location.href = "./blog.html";
 });
 document.getElementById("toggle-home").addEventListener("click", function () {
   // toggle("toggle-home");
-  window.location.href = "./blog.html";
+  window.location.href = "./index.html";
 });
 
-// common class for btn-active
+// common function by class for btn-active
 function activeButton(id) {
   document
-    .getElementById("donate-btn")
+    .getElementById("top-donate-btn")
     .classList.remove("bg-brand-btn-primary");
   document
-    .getElementById("history-btn")
+    .getElementById("top-history-btn")
     .classList.remove("bg-brand-btn-primary");
   document.getElementById(id).classList.add("bg-brand-btn-primary");
 }
 
-document.getElementById("donate-btn").addEventListener("click", function () {
-  activeButton("donate-btn");
-});
+document
+  .getElementById("top-donate-btn")
+  .addEventListener("click", function () {
+    activeButton("top-donate-btn");
+  });
 
-document.getElementById("history-btn").addEventListener("click", function () {
-  activeButton("history-btn");
-});
+document
+  .getElementById("top-history-btn")
+  .addEventListener("click", function () {
+    activeButton("top-history-btn");
+  });

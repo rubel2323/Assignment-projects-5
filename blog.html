@@ -26,6 +26,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
+
   <body class="overflow-x-hidden">
     <!-- Meaningful header added -->
     <section class="header sticky top-0 z-50">
@@ -59,14 +60,14 @@
           </div>
           <button
             type="button"
-            class="btn text-xl bg-brand-btn-primary"
+            class="btn text-xl bg-brand-btn-primary hidden"
             id="toggle-blog"
           >
             Blog
           </button>
           <button
             type="button"
-            class="btn text-xl bg-brand-btn-primary hidden"
+            class="btn text-xl bg-brand-btn-primary"
             id="toggle-home"
           >
             Home
@@ -99,15 +100,72 @@
         <div class="top-btn flex justify-center gap-2">
           <button
             class="btn bg-brand-btn-primary"
-            id="donate-btn"
+            id="top-donate-btn"
             type="button"
           >
             Donate
           </button>
-          <button class="btn" type="button" id="history-btn">History</button>
+          <button class="btn" type="button" id="top-history-btn">
+            History
+          </button>
         </div>
       </div>
     </section>
+
+    <section class="FAQ">
+      <div class="max-w-7xl mx-auto px-1 lg:px-4">
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+          <!-- Question-1 -->
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <div class="collapse-title font-semibold">
+            What is the Document Object Model (DOM)?
+          </div>
+          <div class="collapse-content text-sm">
+            It is the building block tree of a page.
+          </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title font-semibold">
+            How do you select an element from the DOM?
+          </div>
+          <div class="collapse-content text-sm">
+            Normally, I use ---
+            "document.getElementById(id).addEventListener("click",function(){});
+          </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title font-semibold">
+            What is event delegation in the context of the DOM, and why is it
+            useful?
+          </div>
+          <div class="collapse-content text-sm">
+            Event delegation is the representation of the function itself, it is
+            useful because of working values of that running function.Without
+            'event' delegation, we can not use of that running function values
+            itself.
+          </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title font-semibold">
+            How do you manipulate an element's attributes and styles using the
+            DOM?
+          </div>
+          <div class="collapse-content text-sm">
+            I work using setAttribute and getAttribute working with any html
+            attribute.For style, Normally, i use ---
+            variableName.style.css-propertyName="css-value" ;
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- The History Pages -->
+    <section class="history hidden" id="donation-history">
+      <h2>This is Donation History</h2>
+    </section>
     <script src="script.js"></script>
+    <script src="history.js"></script>
   </body>
 </html>

@@ -28,10 +28,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="overflow-x-hidden">
-    <!-- Meaningful header added -->
-    <section class="header sticky top-0 z-50">
-      <!-- Navigation Bar Added -->
+    <!-- Navigation Bar & Top-Large button Added and Made Sticky-->
 
+    <section class="header sticky top-0 z-50">
       <div class="navbar bg-brand-primary shadow-sm">
         <div class="navbar-start">
           <div class="dropdown">
@@ -69,14 +68,14 @@
           </div>
           <button
             type="button"
-            class="btn text-xl bg-brand-btn-primary hidden"
+            class="btn text-xl bg-brand-btn-primary"
             id="toggle-blog"
           >
             Blog
           </button>
           <button
             type="button"
-            class="btn text-xl bg-brand-btn-primary"
+            class="btn text-xl bg-brand-btn-primary hidden"
             id="toggle-home"
           >
             Home
@@ -109,17 +108,21 @@
         <div class="top-btn flex justify-center gap-2">
           <button
             class="btn bg-brand-btn-primary"
-            id="donate-btn"
+            id="top-donate-btn"
             type="button"
           >
             Donate
           </button>
-          <button class="btn" type="button" id="history-btn">History</button>
+          <button class="btn" type="button" id="top-history-btn">
+            History
+          </button>
         </div>
       </div>
     </section>
 
-    <section class="main max-w-7xl mx-auto">
+    <!-- Donation Cards -->
+
+    <section class="main max-w-7xl mx-auto" id="donation-card">
       <!-- cards added no-1 -->
       <div class="card py-10 flex flex-col lg:flex-row px-16 gap-4">
         <figure class="w-full lg:w-1/2">
@@ -294,8 +297,14 @@
         </div>
       </div>
     </section>
-    <section class="footer"></section>
+
+    <!-- The History Pages -->
+    <section class="history hidden" id="donation-history">
+      <h2>This is Donation History</h2>
+    </section>
+
     <!-- js file added -->
     <script src="script.js"></script>
+    <script src="history.js"></script>
   </body>
 </html>
