@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Daisy Ui Added-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- css files added -->
+    <!-- Tailwind CDN v-4 works only html with style type text/tailwindcss -->
+    <style type="text/tailwindcss">
+      @theme {
+        --color-brand-primary: #f9f7f3;
+        --color-brand-btn-primary: #b4f461;
+        --color-main-body: #ffffff;
+      }
+    </style>
+
+    <link rel="stylesheet" href="./css/app.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- Meaningful header added -->
+    <section class="header sticky top-0 z-50">
+      <!-- Navigation Bar Added -->
+
+      <div class="navbar bg-brand-primary shadow-sm">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="-1"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            >
+              <li class="font-medium"><a href="">Donate Bangladesh</a></li>
+            </ul>
+          </div>
+          <button
+            type="button"
+            class="btn text-xl bg-brand-btn-primary"
+            id="toggle-blog"
+          >
+            Blog
+          </button>
+          <button
+            type="button"
+            class="btn text-xl bg-brand-btn-primary hidden"
+            id="toggle-home"
+          >
+            Home
+          </button>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <div class="menu menu-horizontal px-5">
+            <div><img src="assets/logo.png" alt="" /></div>
+            <div class="py-4 px-2">
+              <h2 class="text-xl font-semibold">Donate Bangladesh</h2>
+            </div>
+          </div>
+        </div>
+        <div class="navbar-end space-x-8">
+          <!--Right side  icon  and Money-->
+
+          <div class="flex gap-2">
+            <div><img src="assets/coin.png" alt="" /></div>
+
+            <div class="flex gap-2">
+              <p id="account-balance" class="font-medium">5500</p>
+              <span class="font-medium">BDT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Large two buttons -->
+
+      <div class="main-button bg-main-body shadow-md py-4 bg-white/30">
+        <div class="top-btn flex justify-center gap-2">
+          <button
+            class="btn bg-brand-btn-primary"
+            id="donate-btn"
+            type="button"
+          >
+            Donate
+          </button>
+          <button class="btn" type="button" id="history-btn">History</button>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

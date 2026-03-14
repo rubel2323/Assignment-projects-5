@@ -1,18 +1,18 @@
 // Common class for Toggle state
 function toggle(id) {
-  document.getElementById("toggle-history").classList.remove("hidden");
+  document.getElementById("toggle-home").classList.remove("hidden");
   document.getElementById("toggle-blog").classList.remove("hidden");
   document.getElementById(id).classList.add("hidden");
 }
 
 document.getElementById("toggle-blog").addEventListener("click", function () {
-  toggle("toggle-blog");
+  // toggle("toggle-blog");
+  window.location.href = "./index.html";
 });
-document
-  .getElementById("toggle-history")
-  .addEventListener("click", function () {
-    toggle("toggle-history");
-  });
+document.getElementById("toggle-home").addEventListener("click", function () {
+  // toggle("toggle-home");
+  window.location.href = "./blog.html";
+});
 
 // common class for btn-active
 function activeButton(id) {
