@@ -169,12 +169,14 @@
               class="rounded-md w-full box-border py-2"
             />
 
-            <button
+            <label
+              for="my_modal_6"
               class="btn w-full rounded-md bg-brand-btn-primary"
               type="button"
+              id="donation_for_noakhali_confirm_btn"
             >
               Donate Now
-            </button>
+            </label>
           </div>
         </div>
       </div>
@@ -227,12 +229,13 @@
               class="rounded-md w-full box-border py-2"
             />
 
-            <button
+            <label
+              id="donation-for-feni_confirm_btn"
               class="btn w-full rounded-md bg-brand-btn-primary"
-              type="button"
+              for="my_modal_6"
             >
               Donate Now
-            </button>
+            </label>
           </div>
         </div>
       </div>
@@ -287,12 +290,13 @@
               class="rounded-md w-full box-border py-2"
             />
 
-            <button
+            <label
+              for="my_modal_6"
+              id="donation_for_qouta_confirm_btn"
               class="btn w-full rounded-md bg-brand-btn-primary"
-              type="button"
             >
               Donate Now
-            </button>
+            </label>
           </div>
         </div>
       </div>
@@ -302,6 +306,28 @@
     <section class="history hidden" id="donation-history">
       <h2>This is Donation History</h2>
     </section>
+
+    <!-- Modal -->
+
+    <!-- Modal values and working -->
+    <input type="checkbox" id="my_modal_6" class="modal-toggle" />
+    <div class="modal" role="dialog">
+      <div
+        class="modal-box flex flex-col justify-center items-center rounded-2xl py-14"
+      >
+        <h3 class="text-3xl font-bold">Congrats!</h3>
+        <div>
+          <p id="donation_amount_for_modal"></p>
+          <p>BDT</p>
+          <div><img src="resources/dollar 1.png" alt="" /></div>
+        </div>
+        <p class="py-4">You have donated for humankind.</p>
+        <h4 class="text-md font-medium">Successfully</h4>
+        <div class="modal-action">
+          <label for="my_modal_6" class="btn">Close!</label>
+        </div>
+      </div>
+    </div>
 
     <!-- js file added -->
     <script src="script.js"></script>

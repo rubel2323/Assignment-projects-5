@@ -29,3 +29,7 @@ document
   .addEventListener("click", function () {
     activeButton("top-history-btn");
   });
+
+document.getElementById("my_modal_6").addEventListener("click", function () {
+  console.log("hi i am modal id");
+});
