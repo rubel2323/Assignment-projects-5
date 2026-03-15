@@ -96,13 +96,13 @@
             <div><img src="assets/coin.png" alt="" /></div>
 
             <div class="flex gap-2">
-              <p id="account-balance" class="font-medium">5500</p>
+              <p id="my_account_balance" class="font-medium">5500</p>
               <span class="font-medium">BDT</span>
             </div>
           </div>
         </div>
       </div>
-      <!-- Large two buttons -->
+      <!-- Large Top two buttons -->
 
       <div class="main-button bg-main-body shadow-md py-4 bg-white/30">
         <div class="top-btn flex justify-center gap-2">
@@ -258,7 +258,7 @@
               <div><img src="assets/coin.png" alt="" /></div>
 
               <div class="flex gap-2 justify-center items-center">
-                <p id="donation-for-qouta" class="font-medium">0</p>
+                <p id="total_balance_for_quota" class="font-medium">0</p>
                 <span class="font-medium">BDT</span>
               </div>
             </div>
@@ -286,13 +286,14 @@
           >
             <input
               type="text"
+              id="input_for_donation_for_quota"
               placeholder="Your donation amount"
               class="rounded-md w-full box-border py-2"
             />
 
             <label
               for="my_modal_6"
-              id="donation_for_qouta_confirm_btn"
+              id="donation_for_quota_confirm_btn"
               class="btn w-full rounded-md bg-brand-btn-primary"
             >
               Donate Now
@@ -313,24 +314,26 @@
     <input type="checkbox" id="my_modal_6" class="modal-toggle" />
     <div class="modal" role="dialog">
       <div
-        class="modal-box flex flex-col justify-center items-center rounded-2xl py-14"
+        class="modal-box flex flex-col justify-center items-center rounded-2xl"
       >
         <h3 class="text-3xl font-bold">Congrats!</h3>
-        <div>
+        <div class="flex py-4">
           <p id="donation_amount_for_modal"></p>
-          <p>BDT</p>
           <div><img src="resources/dollar 1.png" alt="" /></div>
         </div>
         <p class="py-4">You have donated for humankind.</p>
         <h4 class="text-md font-medium">Successfully</h4>
         <div class="modal-action">
-          <label for="my_modal_6" class="btn">Close!</label>
+          <label for="my_modal_6" class="btn bg-brand-btn-primary"
+            >Close Confirmation</label
+          >
         </div>
       </div>
     </div>
 
     <!-- js file added -->
     <script src="script.js"></script>
-    <script src="history.js"></script>
+    <script src="top-button.js"></script>
+    <script src="donation.js"></script>
   </body>
 </html>
