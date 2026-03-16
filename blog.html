@@ -34,30 +34,6 @@
 
       <div class="navbar bg-brand-primary shadow-sm">
         <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
-            </div>
-            <ul
-              tabindex="-1"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
-            >
-              <li class="font-medium"><a href="">Donate Bangladesh</a></li>
-            </ul>
-          </div>
           <button
             type="button"
             class="btn text-xl bg-brand-btn-primary hidden"
@@ -74,12 +50,10 @@
           </button>
         </div>
         <div class="navbar-center hidden lg:flex">
-          <div class="menu menu-horizontal px-5">
+          <div class="menu menu-horizontal px-3">
             <div><img src="assets/logo.png" alt="" /></div>
-            <div class="py-4 px-2">
-              <h2 class="text-xl font-semibold">Donate Bangladesh</h2>
-            </div>
           </div>
+          <div><p class="font-medium text-lg">Donate Bangladesh</p></div>
         </div>
         <div class="navbar-end space-x-8">
           <!--Right side  icon  and Money-->
@@ -125,10 +99,7 @@
             useful?
           </div>
           <div class="collapse-content text-sm">
-            Event delegation is the representation of the function itself, it is
-            useful because of working values of that running function.Without
-            'event' delegation, we can not use of that running function values
-            itself.
+            Event delegation is remove or add into the event.target
           </div>
         </div>
         <div class="collapse collapse-arrow bg-base-100 border border-base-300">
@@ -146,9 +117,7 @@
       </div>
     </section>
     <!-- The History Pages -->
-    <section class="history hidden" id="donation-history">
-      <h2>This is Donation History</h2>
-    </section>
+    <section class="history hidden" id="donation-history"></section>
     <script src="top-button.js"></script>
     <script src="script.js"></script>
   </body>

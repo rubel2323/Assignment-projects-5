@@ -23,7 +23,6 @@
     </style>
 
     <link rel="stylesheet" href="./css/app.css" />
-    <link rel="stylesheet" href="./css/style.css" />
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
@@ -124,6 +123,7 @@
 
     <section class="main max-w-7xl mx-auto" id="donation-card">
       <!-- cards added no-1 -->
+
       <div class="card py-10 flex flex-col lg:flex-row px-16 gap-4">
         <figure class="w-full lg:w-1/2">
           <img
@@ -170,14 +170,12 @@
               class="rounded-md w-full box-border py-2"
             />
 
-            <label
-              for="my_modal_6"
+            <button
               class="btn w-full rounded-md bg-brand-btn-primary"
-              type="button"
               id="donation_for_noakhali_confirm_btn"
             >
               Donate Now
-            </label>
+            </button>
           </div>
         </div>
       </div>
@@ -231,13 +229,12 @@
               class="rounded-md w-full box-border py-2"
             />
 
-            <label
+            <button
               id="donation_for_feni_confirm_btn"
               class="btn w-full rounded-md bg-brand-btn-primary"
-              for="my_modal_6"
             >
               Donate Now
-            </label>
+            </button>
           </div>
         </div>
       </div>
@@ -293,28 +290,23 @@
               class="rounded-md w-full box-border py-2"
             />
 
-            <label
-              for="my_modal_6"
+            <button
               id="donation_for_quota_confirm_btn"
               class="btn w-full rounded-md bg-brand-btn-primary"
             >
               Donate Now
-            </label>
+            </button>
           </div>
         </div>
       </div>
     </section>
 
     <!-- The History Pages -->
-    <section class="history hidden" id="donation-history">
-      <h2>This is Donation History</h2>
-    </section>
+    <section class="history hidden" id="donation-history"></section>
 
-    <!-- Modal -->
+    <dialog id="my_modal_6" class="modal">
+      <!-- <input type="checkbox" id="my_modal_6" class="modal-toggle" /> -->
 
-    <!-- Modal values and working -->
-    <input type="checkbox" id="my_modal_6" class="modal-toggle" />
-    <div class="modal" role="dialog">
       <div
         class="modal-box flex flex-col justify-center items-center rounded-2xl"
       >
@@ -326,18 +318,22 @@
         <p class="py-4">You have donated for humankind.</p>
         <h4 class="text-md font-medium">Successfully</h4>
         <div class="modal-action">
-          <label for="my_modal_6" class="btn bg-brand-btn-primary"
-            >Close Confirmation</label
-          >
+          <form method="dialog">
+            <button type="submit" class="btn bg-brand-btn-primary outline-0">
+              Close Confirmation
+            </button>
+          </form>
         </div>
       </div>
-    </div>
+    </dialog>
 
     <!-- js file added -->
     <script src="script.js"></script>
     <script src="top-button.js"></script>
+
     <script src="donation.js"></script>
-    <!-- <script src="donation-history.js"></script> -->
+
     <script src="common-function-donation.js"></script>
+    <script src="modal.js"></script>
   </body>
 </html>
